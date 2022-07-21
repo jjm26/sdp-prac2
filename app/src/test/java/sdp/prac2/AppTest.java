@@ -6,6 +6,7 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+<<<<<<< HEAD
 import java.util.List;
 
 class AppTest {
@@ -23,4 +24,29 @@ class AppTest {
 
 
     }
+=======
+import java.util.*;
+
+class AppTest {
+    @Test void Task2Test() {
+        // Arrange
+        SimpleFunctions classBeingTested = new SimpleFunctions();
+
+        List<String> test1 = Arrays.asList("John", "Tyler", "Etienne");
+        List<String> test2 = Arrays.asList();
+        List<String> test3 = Arrays.asList("middle", "", "is", "Empty");
+        List<String> expected1 = Arrays.asList("ohn", "yler", "tienne");
+        List<String> expected2 = Arrays.asList();
+        List<String> expected3 = Arrays.asList("iddle", "s", "mpty");
+        // Act
+        List<String> result1 = classBeingTested.Task2(test1);
+        List<String> result2 = classBeingTested.Task2(test2);
+        List<String> result3 = classBeingTested.Task2(test3);
+        // Assert
+        assertIterableEquals(expected1, result1);
+        assertIterableEquals(expected2, result2);
+        assertIterableEquals(expected3, result3);
+    }
+
+>>>>>>> 8489eef4c7e5b30ba9410c2e41295a5ffe22aa96
 }
