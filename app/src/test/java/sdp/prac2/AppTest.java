@@ -6,5 +6,21 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+
 class AppTest {
+    
+    @Test void Task3Test(){
+        SimpleFunctions classBeingTested = new SimpleFunctions();
+        String test1 = "(hello)";
+        String test2 = "()";
+
+        boolean result1 = classBeingTested.Task3(test1);
+        boolean result2 = classBeingTested.Task3(test2);
+
+        assertEquals(true, test1);
+        assertEquals(true,test2)
+
+
+    }
 }
